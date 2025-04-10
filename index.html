@@ -3,90 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intellect Spark</title>
+    <title>General Knowledge Hub</title>
     <style>
         body {
             font-family: sans-serif;
-            background-color: #f0f8ff; /* Light blue background */
+            background-color: #f0f8ff;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-        }
-
-        .question-container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 80%; /* Adjust width as needed */
-            max-width: 800px; /* Maximum width for larger screens */
         }
 
-        h1 h2 {
+        h1 {
             color: #333;
-            font-size: 2.5em;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
             margin-bottom: 30px;
+            max-width: 600px;
         }
 
-        .question {
-            font-size: 1.8em;
-            color: blue;
-            border: 2px solid blue;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-
-        .options {
-            list-style: none;
-            padding: 0;
-            
-        }
-
-        .option {
-            margin: 15px 0;
+        .play-button {
             background-color: #007bff;
             color: white;
-            border: none;
+            padding: 15px 30px;
+            text-decoration: none;
             border-radius: 5px;
+            font-size: 1.5em;
             cursor: pointer;
-            width: 100%;
-            padding: 15px;
-            font-size: 1.2em;
+            transition: background-color 0.3s;
         }
 
-        .option button {
-            width: 100%;
-            padding: 15px;
-            font-size: 1.2em;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .option button:hover {
+        .play-button:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="question-container">
-        <h1>INTELLECT SPARK<h1>
-        <h2>General Knowledge Quiz</h2>
-        <div id="question" class="question">Loading question...</div>
-        <ul id="options" class="options">
-            <li class="option"><button>Option 1</button></li>
-            <li class="option"><button>Option 2</button></li>
-            <li class="option"><button>Option 3</button></li>
-            <li class="option"><button>Option 4</button></li>
-        </ul>
-    </div>
-
-    <script src="script.js"></script>
+    <h1>Welcome to Intellect Spark</h1>
+    <p>General knowledge is essential for navigating the world around us. It helps us understand diverse topics, make informed decisions, and engage in meaningful conversations. Test your knowledge and learn something new with our interactive quiz!</p>
+    <a href="main.html" class="play-button">Play Quiz</a>
 </body>
 </html>
